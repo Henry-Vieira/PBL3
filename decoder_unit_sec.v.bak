@@ -1,0 +1,41 @@
+module decoder_unit_sec(Q1, Q2, Q3, Q4, aus, bus, cus, dus, eus, fus, gus);
+	input Q1, Q2, Q3, Q4;
+	output aus, bus, cus, dus, eus, fus, gus;
+
+	// Led A
+	and(A1, !Q2, !Q1, !Q3, Q4);
+	and(A2, Q2, !Q3, !Q4);
+	or(aus, A1, A2);
+		
+	// Led B
+	and(B1, Q2, !Q3, Q4);
+	and(B2, Q2, Q3, !Q4);
+	or(bus, B1, B2);
+		
+	//LED C
+	and(cus, !Q2, Q3, !Q4);
+		
+	//LED D
+	and(D1, !Q2, !Q1, !Q3, Q4);
+	and(D2, Q2, !Q3, Q4);
+	and(D3, Q2, Q3, Q4);
+	or(dus, D1, D2, D3);
+		
+	//LED E
+	and(E1, Q2, !Q3);
+	or(eus, E1, Q4);
+		
+	//LED F
+	and(F1, !Q1, !Q2, Q4);
+	and(F2, !Q2, Q3);
+	and(F3, Q3, Q4);
+	or(fus, F1, F2, F3);
+		
+	//LED G
+	and(G1, !Q1, !Q2, !Q3);
+	and(G2, Q2, Q3, Q4);
+	or(gus, G1, G2);
+	
+endmodule
+
+	
