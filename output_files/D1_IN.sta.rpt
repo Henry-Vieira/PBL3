@@ -1,0 +1,1361 @@
+Timing Analyzer report for D1_IN
+Fri Jul 12 13:45:52 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'frequency_divisor:comb_3|dFlipFlop:F0|q'
+ 12. Setup: 'dFlipFlop:FFD0|q'
+ 13. Setup: 'dFlipFlop:FFL0|q'
+ 14. Setup: 'matriz_led_nivel:comb_49|dFlipFlop:comb_8|q'
+ 15. Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q'
+ 16. Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q'
+ 17. Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q'
+ 18. Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q'
+ 19. Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q'
+ 20. Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q'
+ 21. Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q'
+ 22. Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q'
+ 23. Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q'
+ 24. Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q'
+ 25. Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q'
+ 26. Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q'
+ 27. Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q'
+ 28. Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q'
+ 29. Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q'
+ 30. Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q'
+ 31. Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q'
+ 32. Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q'
+ 33. Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q'
+ 34. Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q'
+ 35. Setup: 'matriz_led_nivel:comb_49|dFlipFlop:comb_7|q'
+ 36. Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q'
+ 37. Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q'
+ 38. Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q'
+ 39. Setup: 'CLK_IN'
+ 40. Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q'
+ 41. Hold: 'frequency_divisor:comb_3|dFlipFlop:F0|q'
+ 42. Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q'
+ 43. Hold: 'CLK_IN'
+ 44. Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q'
+ 45. Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q'
+ 46. Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q'
+ 47. Hold: 'matriz_led_nivel:comb_49|dFlipFlop:comb_7|q'
+ 48. Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q'
+ 49. Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q'
+ 50. Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q'
+ 51. Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q'
+ 52. Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q'
+ 53. Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q'
+ 54. Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q'
+ 55. Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q'
+ 56. Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q'
+ 57. Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q'
+ 58. Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q'
+ 59. Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q'
+ 60. Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q'
+ 61. Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q'
+ 62. Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q'
+ 63. Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q'
+ 64. Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q'
+ 65. Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q'
+ 66. Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q'
+ 67. Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q'
+ 68. Hold: 'dFlipFlop:FFD0|q'
+ 69. Hold: 'matriz_led_nivel:comb_49|dFlipFlop:comb_8|q'
+ 70. Hold: 'dFlipFlop:FFL0|q'
+ 71. Setup Transfers
+ 72. Hold Transfers
+ 73. Report TCCS
+ 74. Report RSKM
+ 75. Unconstrained Paths Summary
+ 76. Clock Status Summary
+ 77. Unconstrained Input Ports
+ 78. Unconstrained Output Ports
+ 79. Unconstrained Input Ports
+ 80. Unconstrained Output Ports
+ 81. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; D1_IN                                               ;
+; Device Family         ; MAX II                                              ;
+; Device Name           ; EPM240T100C5                                        ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                               ;
++---------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------------------------+
+; Clock Name                                        ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                               ;
++---------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------------------------+
+; CLK_IN                                            ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK_IN }                                            ;
+; dFlipFlop:FFD0|q                                  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dFlipFlop:FFD0|q }                                  ;
+; dFlipFlop:FFL0|q                                  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dFlipFlop:FFL0|q }                                  ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q } ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q } ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q } ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q } ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q } ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q } ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q } ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q } ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q } ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q } ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q } ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q } ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q } ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q } ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q } ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q } ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q } ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q } ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q } ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q } ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q } ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q } ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q } ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q } ;
+; frequency_divisor:comb_3|dFlipFlop:F0|q           ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { frequency_divisor:comb_3|dFlipFlop:F0|q }           ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { matriz_led_nivel:comb_49|dFlipFlop:comb_7|q }       ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { matriz_led_nivel:comb_49|dFlipFlop:comb_8|q }       ;
++---------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Fmax Summary                                                                      ;
++------------+-----------------+---------------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                                  ; Note ;
++------------+-----------------+---------------------------------------------+------+
+; 347.71 MHz ; 347.71 MHz      ; frequency_divisor:comb_3|dFlipFlop:F0|q     ;      ;
+; 400.8 MHz  ; 400.8 MHz       ; dFlipFlop:FFD0|q                            ;      ;
+; 451.88 MHz ; 451.88 MHz      ; dFlipFlop:FFL0|q                            ;      ;
+; 455.79 MHz ; 455.79 MHz      ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ;      ;
++------------+-----------------+---------------------------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++----------------------------------------------------------------------------+
+; Setup Summary                                                              ;
++---------------------------------------------------+--------+---------------+
+; Clock                                             ; Slack  ; End Point TNS ;
++---------------------------------------------------+--------+---------------+
+; frequency_divisor:comb_3|dFlipFlop:F0|q           ; -1.876 ; -6.685        ;
+; dFlipFlop:FFD0|q                                  ; -1.495 ; -2.987        ;
+; dFlipFlop:FFL0|q                                  ; -1.213 ; -1.213        ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; -1.194 ; -1.194        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; 0.466  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; 0.467  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; 0.467  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; 0.467  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; 0.467  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; 0.467  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; 0.467  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; 0.467  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; 0.467  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; 0.800  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; 0.800  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; 0.808  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; 0.818  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; 0.819  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; 0.822  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; 0.824  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; 0.825  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; 0.836  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; 0.839  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; 0.839  ; 0.000         ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; 0.942  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; 1.188  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; 1.205  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; 1.341  ; 0.000         ;
+; CLK_IN                                            ; 1.665  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 1.997  ; 0.000         ;
++---------------------------------------------------+--------+---------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Summary                                                               ;
++---------------------------------------------------+--------+---------------+
+; Clock                                             ; Slack  ; End Point TNS ;
++---------------------------------------------------+--------+---------------+
+; frequency_divisor:comb_3|dFlipFlop:F0|q           ; -5.553 ; -20.396       ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; -2.400 ; -6.592        ;
+; CLK_IN                                            ; -1.719 ; -1.719        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; -1.395 ; -1.395        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; -1.259 ; -1.259        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; -1.242 ; -1.242        ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; -0.996 ; -0.996        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; -0.893 ; -0.893        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; -0.893 ; -0.893        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; -0.890 ; -0.890        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; -0.879 ; -0.879        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; -0.878 ; -0.878        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; -0.876 ; -0.876        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; -0.873 ; -0.873        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; -0.872 ; -0.872        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; -0.862 ; -0.862        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; -0.854 ; -0.854        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; -0.854 ; -0.854        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; -0.521 ; -0.521        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; -0.521 ; -0.521        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; -0.521 ; -0.521        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; -0.521 ; -0.521        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; -0.521 ; -0.521        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; -0.521 ; -0.521        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; -0.521 ; -0.521        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; -0.521 ; -0.521        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; -0.520 ; -0.520        ;
+; dFlipFlop:FFD0|q                                  ; 1.640  ; 0.000         ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; 1.640  ; 0.000         ;
+; dFlipFlop:FFL0|q                                  ; 1.659  ; 0.000         ;
++---------------------------------------------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++----------------------------------------------------------------------------+
+; Minimum Pulse Width Summary                                                ;
++---------------------------------------------------+--------+---------------+
+; Clock                                             ; Slack  ; End Point TNS ;
++---------------------------------------------------+--------+---------------+
+; CLK_IN                                            ; -2.289 ; -2.289        ;
+; dFlipFlop:FFD0|q                                  ; 0.234  ; 0.000         ;
+; dFlipFlop:FFL0|q                                  ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|dFlipFlop:F0|q           ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; 0.234  ; 0.000         ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; 0.234  ; 0.000         ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; 0.234  ; 0.000         ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; 0.234  ; 0.000         ;
++---------------------------------------------------+--------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|dFlipFlop:F0|q'                                                                                                                                                                        ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -1.876 ; dFlipFlop:FFD3|q                        ; dFlipFlop:FFD1|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 0.000      ; 2.543      ;
+; -1.876 ; dFlipFlop:FFD3|q                        ; dFlipFlop:FFD3|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 0.000      ; 2.543      ;
+; -1.719 ; dFlipFlop:FFD2|q                        ; dFlipFlop:FFD2|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 0.000      ; 2.386      ;
+; -1.637 ; dFlipFlop:FFD3|q                        ; dFlipFlop:FFD2|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 0.000      ; 2.304      ;
+; -1.596 ; dFlipFlop:FFD1|q                        ; dFlipFlop:FFD2|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 0.000      ; 2.263      ;
+; -1.587 ; dFlipFlop:FFD1|q                        ; dFlipFlop:FFD3|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 0.000      ; 2.254      ;
+; -1.583 ; dFlipFlop:FFD1|q                        ; dFlipFlop:FFD1|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 0.000      ; 2.250      ;
+; -1.254 ; dFlipFlop:FFD2|q                        ; dFlipFlop:FFD1|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 0.000      ; 1.921      ;
+; -1.254 ; dFlipFlop:FFD2|q                        ; dFlipFlop:FFD3|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 0.000      ; 1.921      ;
+; -1.214 ; frequency_divisor:comb_3|dFlipFlop:F1|q ; frequency_divisor:comb_3|dFlipFlop:F1|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 0.000      ; 1.881      ;
+; 4.105  ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD2|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.500        ; 7.153      ; 3.591      ;
+; 4.605  ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD2|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 7.153      ; 3.591      ;
+; 5.288  ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD1|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.500        ; 7.153      ; 2.408      ;
+; 5.288  ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD3|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.500        ; 7.153      ; 2.408      ;
+; 5.499  ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.500        ; 7.153      ; 2.197      ;
+; 5.788  ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD1|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 7.153      ; 2.408      ;
+; 5.788  ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD3|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 7.153      ; 2.408      ;
+; 5.999  ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 1.000        ; 7.153      ; 2.197      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'dFlipFlop:FFD0|q'                                                                                                     ;
++--------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node         ; To Node           ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+; -1.495 ; dFlipFlop:FFD0D|q ; dFlipFlop:FFD1D|q ; dFlipFlop:FFD0|q ; dFlipFlop:FFD0|q ; 1.000        ; 0.000      ; 2.162      ;
+; -1.492 ; dFlipFlop:FFD0D|q ; dFlipFlop:FFD0D|q ; dFlipFlop:FFD0|q ; dFlipFlop:FFD0|q ; 1.000        ; 0.000      ; 2.159      ;
+; -1.194 ; dFlipFlop:FFD1D|q ; dFlipFlop:FFD1D|q ; dFlipFlop:FFD0|q ; dFlipFlop:FFD0|q ; 1.000        ; 0.000      ; 1.861      ;
++--------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'dFlipFlop:FFL0|q'                                                                                                   ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -1.213 ; dFlipFlop:FFL1|q ; dFlipFlop:FFL1|q ; dFlipFlop:FFL0|q ; dFlipFlop:FFL0|q ; 1.000        ; 0.000      ; 1.880      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'matriz_led_nivel:comb_49|dFlipFlop:comb_8|q'                                                                                                                                                                                    ;
++--------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                   ; To Node                                     ; Launch Clock                                ; Latch Clock                                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+; -1.194 ; matriz_led_nivel:comb_49|dFlipFlop:comb_9|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_9|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; 1.000        ; 0.000      ; 1.861      ;
++--------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.466 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; 0.500        ; 1.784      ; 1.861      ;
+; 0.966 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; 1.000        ; 1.784      ; 1.861      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.467 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; 0.500        ; 1.784      ; 1.860      ;
+; 0.967 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; 1.000        ; 1.784      ; 1.860      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.467 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; 0.500        ; 1.784      ; 1.860      ;
+; 0.967 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; 1.000        ; 1.784      ; 1.860      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.467 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; 1.000        ; 1.785      ; 1.861      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.467 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; 0.500        ; 1.784      ; 1.860      ;
+; 0.967 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; 1.000        ; 1.784      ; 1.860      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.467 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; 0.500        ; 1.784      ; 1.860      ;
+; 0.967 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; 1.000        ; 1.784      ; 1.860      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.467 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; 1.000        ; 1.785      ; 1.861      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.467 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; 1.000        ; 1.785      ; 1.861      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.467 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; 0.500        ; 1.784      ; 1.860      ;
+; 0.967 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; 1.000        ; 1.784      ; 1.860      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.800 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; 0.500        ; 2.136      ; 1.879      ;
+; 1.300 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; 1.000        ; 2.136      ; 1.879      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.800 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; 0.500        ; 2.136      ; 1.879      ;
+; 1.300 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; 1.000        ; 2.136      ; 1.879      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.808 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; 0.500        ; 2.144      ; 1.879      ;
+; 1.308 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; 1.000        ; 2.144      ; 1.879      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.818 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; 0.500        ; 2.154      ; 1.879      ;
+; 1.318 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; 1.000        ; 2.154      ; 1.879      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.819 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; 0.500        ; 2.154      ; 1.878      ;
+; 1.319 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; 1.000        ; 2.154      ; 1.878      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.822 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; 0.500        ; 2.157      ; 1.878      ;
+; 1.322 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; 1.000        ; 2.157      ; 1.878      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.824 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; 0.500        ; 2.160      ; 1.879      ;
+; 1.324 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; 1.000        ; 2.160      ; 1.879      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.825 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; 0.500        ; 2.160      ; 1.878      ;
+; 1.325 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; 1.000        ; 2.160      ; 1.878      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.836 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; 0.500        ; 2.154      ; 1.861      ;
+; 1.336 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; 1.000        ; 2.154      ; 1.861      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.839 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; 0.500        ; 2.157      ; 1.861      ;
+; 1.339 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; 1.000        ; 2.157      ; 1.861      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 0.839 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; 0.500        ; 2.157      ; 1.861      ;
+; 1.339 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; 1.000        ; 2.157      ; 1.861      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'matriz_led_nivel:comb_49|dFlipFlop:comb_7|q'                                                                                                                                                                                   ;
++-------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                   ; To Node                                     ; Launch Clock                                ; Latch Clock                                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+; 0.942 ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q ; 0.500        ; 2.402      ; 2.003      ;
+; 1.442 ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q ; 1.000        ; 2.402      ; 2.003      ;
++-------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 1.188 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; 0.500        ; 2.765      ; 2.120      ;
+; 1.688 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; 1.000        ; 2.765      ; 2.120      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 1.205 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; 0.500        ; 2.800      ; 2.138      ;
+; 1.705 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; 1.000        ; 2.800      ; 2.138      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q'                                                                                                                                                                       ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 1.341 ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; 0.500        ; 2.936      ; 2.138      ;
+; 1.841 ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; 1.000        ; 2.936      ; 2.138      ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLK_IN'                                                                                                                                                                                                          ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+-------------+--------------+------------+------------+
+; 1.665 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; CLK_IN      ; 0.500        ; 3.242      ; 2.120      ;
+; 2.165 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; CLK_IN      ; 1.000        ; 3.242      ; 2.120      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q'                                                                                                                                                                                                     ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; 1.997 ; dFlipFlop:FFL0|q                                  ; dFlipFlop:FFL0|q                                  ; dFlipFlop:FFL0|q                                  ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 0.500        ; 3.664      ; 2.210      ;
+; 2.087 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 0.500        ; 3.664      ; 2.120      ;
+; 2.346 ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 0.500        ; 3.664      ; 1.861      ;
+; 2.497 ; dFlipFlop:FFL0|q                                  ; dFlipFlop:FFL0|q                                  ; dFlipFlop:FFL0|q                                  ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 1.000        ; 3.664      ; 2.210      ;
+; 2.587 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 1.000        ; 3.664      ; 2.120      ;
+; 2.846 ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 1.000        ; 3.664      ; 1.861      ;
++-------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|dFlipFlop:F0|q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -5.553 ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 7.153      ; 2.197      ;
+; -5.342 ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD1|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 7.153      ; 2.408      ;
+; -5.342 ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD3|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 7.153      ; 2.408      ;
+; -5.053 ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; -0.500       ; 7.153      ; 2.197      ;
+; -4.842 ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD1|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; -0.500       ; 7.153      ; 2.408      ;
+; -4.842 ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD3|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; -0.500       ; 7.153      ; 2.408      ;
+; -4.159 ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD2|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 7.153      ; 3.591      ;
+; -3.659 ; dFlipFlop:FFD0|q                        ; dFlipFlop:FFD2|q                        ; dFlipFlop:FFD0|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; -0.500       ; 7.153      ; 3.591      ;
+; 1.660  ; frequency_divisor:comb_3|dFlipFlop:F1|q ; frequency_divisor:comb_3|dFlipFlop:F1|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 0.000      ; 1.881      ;
+; 1.700  ; dFlipFlop:FFD2|q                        ; dFlipFlop:FFD1|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 0.000      ; 1.921      ;
+; 1.700  ; dFlipFlop:FFD2|q                        ; dFlipFlop:FFD3|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 0.000      ; 1.921      ;
+; 2.029  ; dFlipFlop:FFD1|q                        ; dFlipFlop:FFD1|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 0.000      ; 2.250      ;
+; 2.033  ; dFlipFlop:FFD1|q                        ; dFlipFlop:FFD3|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 0.000      ; 2.254      ;
+; 2.042  ; dFlipFlop:FFD1|q                        ; dFlipFlop:FFD2|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 0.000      ; 2.263      ;
+; 2.083  ; dFlipFlop:FFD3|q                        ; dFlipFlop:FFD2|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 0.000      ; 2.304      ;
+; 2.165  ; dFlipFlop:FFD2|q                        ; dFlipFlop:FFD2|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 0.000      ; 2.386      ;
+; 2.322  ; dFlipFlop:FFD3|q                        ; dFlipFlop:FFD1|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 0.000      ; 2.543      ;
+; 2.322  ; dFlipFlop:FFD3|q                        ; dFlipFlop:FFD3|q                        ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; 0.000        ; 0.000      ; 2.543      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -2.400 ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 0.000        ; 3.664      ; 1.861      ;
+; -2.141 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 0.000        ; 3.664      ; 2.120      ;
+; -2.051 ; dFlipFlop:FFL0|q                                  ; dFlipFlop:FFL0|q                                  ; dFlipFlop:FFL0|q                                  ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 0.000        ; 3.664      ; 2.210      ;
+; -1.900 ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; -0.500       ; 3.664      ; 1.861      ;
+; -1.641 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; -0.500       ; 3.664      ; 2.120      ;
+; -1.551 ; dFlipFlop:FFL0|q                                  ; dFlipFlop:FFL0|q                                  ; dFlipFlop:FFL0|q                                  ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; -0.500       ; 3.664      ; 2.210      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLK_IN'                                                                                                                                                                                                            ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+-------------+--------------+------------+------------+
+; -1.719 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; CLK_IN      ; 0.000        ; 3.242      ; 2.120      ;
+; -1.219 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; CLK_IN      ; -0.500       ; 3.242      ; 2.120      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -1.395 ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; 0.000        ; 2.936      ; 2.138      ;
+; -0.895 ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; -0.500       ; 2.936      ; 2.138      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -1.259 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; 0.000        ; 2.800      ; 2.138      ;
+; -0.759 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; -0.500       ; 2.800      ; 2.138      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -1.242 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; 0.000        ; 2.765      ; 2.120      ;
+; -0.742 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; -0.500       ; 2.765      ; 2.120      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'matriz_led_nivel:comb_49|dFlipFlop:comb_7|q'                                                                                                                                                                                     ;
++--------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                   ; To Node                                     ; Launch Clock                                ; Latch Clock                                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+; -0.996 ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q ; 0.000        ; 2.402      ; 2.003      ;
+; -0.496 ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q ; -0.500       ; 2.402      ; 2.003      ;
++--------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.893 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; 0.000        ; 2.157      ; 1.861      ;
+; -0.393 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; -0.500       ; 2.157      ; 1.861      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.893 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; 0.000        ; 2.157      ; 1.861      ;
+; -0.393 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; -0.500       ; 2.157      ; 1.861      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.890 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; 0.000        ; 2.154      ; 1.861      ;
+; -0.390 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; -0.500       ; 2.154      ; 1.861      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.879 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; 0.000        ; 2.160      ; 1.878      ;
+; -0.379 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; -0.500       ; 2.160      ; 1.878      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.878 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; 0.000        ; 2.160      ; 1.879      ;
+; -0.378 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; -0.500       ; 2.160      ; 1.879      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.876 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; 0.000        ; 2.157      ; 1.878      ;
+; -0.376 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; -0.500       ; 2.157      ; 1.878      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.873 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; 0.000        ; 2.154      ; 1.878      ;
+; -0.373 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; -0.500       ; 2.154      ; 1.878      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.872 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; 0.000        ; 2.154      ; 1.879      ;
+; -0.372 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; -0.500       ; 2.154      ; 1.879      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.862 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; 0.000        ; 2.144      ; 1.879      ;
+; -0.362 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; -0.500       ; 2.144      ; 1.879      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.854 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; 0.000        ; 2.136      ; 1.879      ;
+; -0.354 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; -0.500       ; 2.136      ; 1.879      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.854 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; 0.000        ; 2.136      ; 1.879      ;
+; -0.354 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; -0.500       ; 2.136      ; 1.879      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.521 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; 0.000        ; 1.784      ; 1.860      ;
+; -0.021 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; -0.500       ; 1.784      ; 1.860      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.521 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; 0.000        ; 1.784      ; 1.860      ;
+; -0.021 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; -0.500       ; 1.784      ; 1.860      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.521 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; -0.500       ; 1.785      ; 1.861      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.521 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; 0.000        ; 1.784      ; 1.860      ;
+; -0.021 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; -0.500       ; 1.784      ; 1.860      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.521 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; 0.000        ; 1.784      ; 1.860      ;
+; -0.021 ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; -0.500       ; 1.784      ; 1.860      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.521 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; -0.500       ; 1.785      ; 1.861      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.521 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; -0.500       ; 1.785      ; 1.861      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.521 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; 0.000        ; 1.784      ; 1.860      ;
+; -0.021 ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; -0.500       ; 1.784      ; 1.860      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q'                                                                                                                                                                                                       ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock                                      ; Latch Clock                                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+; -0.520 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; 0.000        ; 1.784      ; 1.861      ;
+; -0.020 ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; -0.500       ; 1.784      ; 1.861      ;
++--------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'dFlipFlop:FFD0|q'                                                                                                     ;
++-------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node         ; To Node           ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+; 1.640 ; dFlipFlop:FFD1D|q ; dFlipFlop:FFD1D|q ; dFlipFlop:FFD0|q ; dFlipFlop:FFD0|q ; 0.000        ; 0.000      ; 1.861      ;
+; 1.938 ; dFlipFlop:FFD0D|q ; dFlipFlop:FFD0D|q ; dFlipFlop:FFD0|q ; dFlipFlop:FFD0|q ; 0.000        ; 0.000      ; 2.159      ;
+; 1.941 ; dFlipFlop:FFD0D|q ; dFlipFlop:FFD1D|q ; dFlipFlop:FFD0|q ; dFlipFlop:FFD0|q ; 0.000        ; 0.000      ; 2.162      ;
++-------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'matriz_led_nivel:comb_49|dFlipFlop:comb_8|q'                                                                                                                                                                                    ;
++-------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                   ; To Node                                     ; Launch Clock                                ; Latch Clock                                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+; 1.640 ; matriz_led_nivel:comb_49|dFlipFlop:comb_9|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_9|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q ; 0.000        ; 0.000      ; 1.861      ;
++-------+---------------------------------------------+---------------------------------------------+---------------------------------------------+---------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'dFlipFlop:FFL0|q'                                                                                                   ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 1.659 ; dFlipFlop:FFL1|q ; dFlipFlop:FFL1|q ; dFlipFlop:FFL0|q ; dFlipFlop:FFL0|q ; 0.000        ; 0.000      ; 1.880      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                                   ;
++---------------------------------------------------+---------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                        ; To Clock                                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------------------------+---------------------------------------------------+----------+----------+----------+----------+
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; CLK_IN                                            ; 1        ; 1        ; 0        ; 0        ;
+; dFlipFlop:FFD0|q                                  ; dFlipFlop:FFD0|q                                  ; 3        ; 0        ; 0        ; 0        ;
+; dFlipFlop:FFL0|q                                  ; dFlipFlop:FFL0|q                                  ; 0        ; 0        ; 0        ; 1        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; 0        ; 0        ; 1        ; 1        ;
+; dFlipFlop:FFL0|q                                  ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|dFlipFlop:F0|q           ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; dFlipFlop:FFD0|q                                  ; frequency_divisor:comb_3|dFlipFlop:F0|q           ; 4        ; 4        ; 0        ; 0        ;
+; frequency_divisor:comb_3|dFlipFlop:F0|q           ; frequency_divisor:comb_3|dFlipFlop:F0|q           ; 9        ; 0        ; 0        ; 1        ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; 0        ; 0        ; 1        ; 1        ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; 0        ; 0        ; 0        ; 1        ;
++---------------------------------------------------+---------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                                    ;
++---------------------------------------------------+---------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                        ; To Clock                                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------------------------+---------------------------------------------------+----------+----------+----------+----------+
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; CLK_IN                                            ; 1        ; 1        ; 0        ; 0        ;
+; dFlipFlop:FFD0|q                                  ; dFlipFlop:FFD0|q                                  ; 3        ; 0        ; 0        ; 0        ;
+; dFlipFlop:FFL0|q                                  ; dFlipFlop:FFL0|q                                  ; 0        ; 0        ; 0        ; 1        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; 0        ; 0        ; 1        ; 1        ;
+; dFlipFlop:FFL0|q                                  ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; 0        ; 0        ; 1        ; 1        ;
+; frequency_divisor:comb_3|dFlipFlop:F0|q           ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; 1        ; 1        ; 0        ; 0        ;
+; dFlipFlop:FFD0|q                                  ; frequency_divisor:comb_3|dFlipFlop:F0|q           ; 4        ; 4        ; 0        ; 0        ;
+; frequency_divisor:comb_3|dFlipFlop:F0|q           ; frequency_divisor:comb_3|dFlipFlop:F0|q           ; 9        ; 0        ; 0        ; 1        ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; 0        ; 0        ; 1        ; 1        ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; 0        ; 0        ; 0        ; 1        ;
++---------------------------------------------------+---------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 3     ; 3    ;
+; Unconstrained Input Port Paths  ; 17    ; 17   ;
+; Unconstrained Output Ports      ; 27    ; 27   ;
+; Unconstrained Output Port Paths ; 111   ; 111  ;
++---------------------------------+-------+------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                                                       ;
++---------------------------------------------------+---------------------------------------------------+------+-------------+
+; Target                                            ; Clock                                             ; Type ; Status      ;
++---------------------------------------------------+---------------------------------------------------+------+-------------+
+; CLK_IN                                            ; CLK_IN                                            ; Base ; Constrained ;
+; dFlipFlop:FFD0|q                                  ; dFlipFlop:FFD0|q                                  ; Base ; Constrained ;
+; dFlipFlop:FFL0|q                                  ; dFlipFlop:FFL0|q                                  ; Base ; Constrained ;
+; frequency_divisor:comb_3|dFlipFlop:F0|q           ; frequency_divisor:comb_3|dFlipFlop:F0|q           ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q ; Base ; Constrained ;
+; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q ; Base ; Constrained ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_7|q       ; Base ; Constrained ;
+; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; matriz_led_nivel:comb_49|dFlipFlop:comb_8|q       ; Base ; Constrained ;
++---------------------------------------------------+---------------------------------------------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; H          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; L          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; M          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; C1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C3          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C4          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C5          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D0D         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D1D         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D3          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DG1         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DG3         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DG4         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL1         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL2         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL3         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL4         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL5         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL6         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; e0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; f0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; g0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; H          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; L          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; M          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; C1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C3          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C4          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C5          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D0D         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D1D         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D3          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DG1         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DG3         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DG4         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL1         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL2         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL3         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL4         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL5         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LL6         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; e0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; f0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; g0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Fri Jul 12 13:45:51 2024
+Info: Command: quartus_sta D1_IN -c D1_IN
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'D1_IN.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|dFlipFlop:F0|q frequency_divisor:comb_3|dFlipFlop:F0|q
+    Info (332105): create_clock -period 1.000 -name dFlipFlop:FFD0|q dFlipFlop:FFD0|q
+    Info (332105): create_clock -period 1.000 -name matriz_led_nivel:comb_49|dFlipFlop:comb_8|q matriz_led_nivel:comb_49|dFlipFlop:comb_8|q
+    Info (332105): create_clock -period 1.000 -name matriz_led_nivel:comb_49|dFlipFlop:comb_7|q matriz_led_nivel:comb_49|dFlipFlop:comb_7|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q
+    Info (332105): create_clock -period 1.000 -name dFlipFlop:FFL0|q dFlipFlop:FFL0|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q
+    Info (332105): create_clock -period 1.000 -name CLK_IN CLK_IN
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q
+    Info (332105): create_clock -period 1.000 -name frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.876
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.876              -6.685 frequency_divisor:comb_3|dFlipFlop:F0|q 
+    Info (332119):    -1.495              -2.987 dFlipFlop:FFD0|q 
+    Info (332119):    -1.213              -1.213 dFlipFlop:FFL0|q 
+    Info (332119):    -1.194              -1.194 matriz_led_nivel:comb_49|dFlipFlop:comb_8|q 
+    Info (332119):     0.466               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q 
+    Info (332119):     0.467               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q 
+    Info (332119):     0.467               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q 
+    Info (332119):     0.467               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q 
+    Info (332119):     0.467               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q 
+    Info (332119):     0.467               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q 
+    Info (332119):     0.467               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q 
+    Info (332119):     0.467               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q 
+    Info (332119):     0.467               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q 
+    Info (332119):     0.800               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q 
+    Info (332119):     0.800               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q 
+    Info (332119):     0.808               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q 
+    Info (332119):     0.818               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q 
+    Info (332119):     0.819               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q 
+    Info (332119):     0.822               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q 
+    Info (332119):     0.824               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q 
+    Info (332119):     0.825               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q 
+    Info (332119):     0.836               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q 
+    Info (332119):     0.839               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q 
+    Info (332119):     0.839               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q 
+    Info (332119):     0.942               0.000 matriz_led_nivel:comb_49|dFlipFlop:comb_7|q 
+    Info (332119):     1.188               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q 
+    Info (332119):     1.205               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q 
+    Info (332119):     1.341               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q 
+    Info (332119):     1.665               0.000 CLK_IN 
+    Info (332119):     1.997               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q 
+Info (332146): Worst-case hold slack is -5.553
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -5.553             -20.396 frequency_divisor:comb_3|dFlipFlop:F0|q 
+    Info (332119):    -2.400              -6.592 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q 
+    Info (332119):    -1.719              -1.719 CLK_IN 
+    Info (332119):    -1.395              -1.395 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q 
+    Info (332119):    -1.259              -1.259 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q 
+    Info (332119):    -1.242              -1.242 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q 
+    Info (332119):    -0.996              -0.996 matriz_led_nivel:comb_49|dFlipFlop:comb_7|q 
+    Info (332119):    -0.893              -0.893 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q 
+    Info (332119):    -0.893              -0.893 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q 
+    Info (332119):    -0.890              -0.890 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q 
+    Info (332119):    -0.879              -0.879 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q 
+    Info (332119):    -0.878              -0.878 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q 
+    Info (332119):    -0.876              -0.876 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q 
+    Info (332119):    -0.873              -0.873 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q 
+    Info (332119):    -0.872              -0.872 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q 
+    Info (332119):    -0.862              -0.862 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q 
+    Info (332119):    -0.854              -0.854 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q 
+    Info (332119):    -0.854              -0.854 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q 
+    Info (332119):    -0.521              -0.521 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q 
+    Info (332119):    -0.521              -0.521 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q 
+    Info (332119):    -0.521              -0.521 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q 
+    Info (332119):    -0.521              -0.521 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q 
+    Info (332119):    -0.521              -0.521 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q 
+    Info (332119):    -0.521              -0.521 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q 
+    Info (332119):    -0.521              -0.521 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q 
+    Info (332119):    -0.521              -0.521 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q 
+    Info (332119):    -0.520              -0.520 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q 
+    Info (332119):     1.640               0.000 dFlipFlop:FFD0|q 
+    Info (332119):     1.640               0.000 matriz_led_nivel:comb_49|dFlipFlop:comb_8|q 
+    Info (332119):     1.659               0.000 dFlipFlop:FFL0|q 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 CLK_IN 
+    Info (332119):     0.234               0.000 dFlipFlop:FFD0|q 
+    Info (332119):     0.234               0.000 dFlipFlop:FFL0|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|dFlipFlop:F0|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4|q 
+    Info (332119):     0.234               0.000 frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5|q 
+    Info (332119):     0.234               0.000 matriz_led_nivel:comb_49|dFlipFlop:comb_7|q 
+    Info (332119):     0.234               0.000 matriz_led_nivel:comb_49|dFlipFlop:comb_8|q 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 366 megabytes
+    Info: Processing ended: Fri Jul 12 13:45:52 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

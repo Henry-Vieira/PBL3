@@ -1,0 +1,610 @@
+|cronometro
+H => H.IN1
+M => M.IN1
+L => L.IN1
+C1 << matriz_led_nivel:comb_49.port4
+C2 << matriz_led_nivel:comb_49.port5
+C3 << matriz_led_nivel:comb_49.port6
+C4 << matriz_led_nivel:comb_49.port7
+C5 << matriz_led_nivel:comb_49.port8
+LL1 << matriz_led_nivel:comb_49.port9
+LL2 << matriz_led_nivel:comb_49.port10
+LL3 << matriz_led_nivel:comb_49.port11
+LL4 << matriz_led_nivel:comb_49.port12
+LL5 << matriz_led_nivel:comb_49.port13
+LL6 << matriz_led_nivel:comb_49.port14
+LL7 << matriz_led_nivel:comb_49.port15
+CLK_IN => CLK_IN.IN1
+D0SET => ~NO_FANOUT~
+D0RST => ~NO_FANOUT~
+D1SET => ~NO_FANOUT~
+D1RST => ~NO_FANOUT~
+D2SET => ~NO_FANOUT~
+D2RST => ~NO_FANOUT~
+D3SET => ~NO_FANOUT~
+D3RST => ~NO_FANOUT~
+D1DSET => ~NO_FANOUT~
+D1DRST => ~NO_FANOUT~
+a0 << comb.DB_MAX_OUTPUT_PORT_TYPE
+b0 << comb.DB_MAX_OUTPUT_PORT_TYPE
+c0 << comb.DB_MAX_OUTPUT_PORT_TYPE
+d0 << comb.DB_MAX_OUTPUT_PORT_TYPE
+e0 << comb.DB_MAX_OUTPUT_PORT_TYPE
+f0 << comb.DB_MAX_OUTPUT_PORT_TYPE
+g0 << comb.DB_MAX_OUTPUT_PORT_TYPE
+DG1 << DG1_.DB_MAX_OUTPUT_PORT_TYPE
+DG2 << <VCC>
+DG3 << DG3_.DB_MAX_OUTPUT_PORT_TYPE
+DG4 << DG4_.DB_MAX_OUTPUT_PORT_TYPE
+D0 << D0.DB_MAX_OUTPUT_PORT_TYPE
+D1 << D1.DB_MAX_OUTPUT_PORT_TYPE
+D2 << D2.DB_MAX_OUTPUT_PORT_TYPE
+D3 << D3.DB_MAX_OUTPUT_PORT_TYPE
+D0D << D0D.DB_MAX_OUTPUT_PORT_TYPE
+D1D << D1D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3
+CLK => CLK.IN1
+CLK_OUT <= comb.DB_MAX_OUTPUT_PORT_TYPE
+S7 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL1
+clk => clk.IN1
+Q_out <= dFlipFlop:F5.q
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL2
+clk => clk.IN1
+Q_out <= dFlipFlop:F5.q
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL3
+clk => clk.IN1
+Q_out <= dFlipFlop:F5.q
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL4
+clk => clk.IN1
+Q_out <= dFlipFlop:F5.q
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|dFlipFlop:F0
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|frequency_divisor:comb_3|dFlipFlop:F1
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|D1_IN:comb_4
+D0 => and1.IN0
+D0 => and2.IN0
+D0 => and3.IN0
+D1 => and1.IN1
+D1 => and4.IN1
+D2 => and3.IN1
+D3 => and2.IN1
+D1_in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|D2_IN:comb_5
+D0 => or1.IN0
+D0 => and2.IN0
+D1 => or1.IN1
+D2 => and1.IN1
+D3 => and2.IN1
+D2_in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|D3_IN:comb_6
+D0 => and1.IN0
+D0 => and2.IN0
+D1 => and2.IN1
+D2 => and3.IN0
+D3 => and1.IN1
+D3 => and3.IN1
+D3_in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|dFlipFlop:FFD0
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|dFlipFlop:FFD1
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|dFlipFlop:FFD2
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|dFlipFlop:FFD3
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|dFlipFlop:FFD0D
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|dFlipFlop:FFD1D
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|decoder_unit_sec:DCDUS
+Q1 => WideAnd0.IN0
+Q1 => WideAnd2.IN0
+Q1 => WideAnd5.IN0
+Q1 => comb.IN1
+Q1 => WideAnd6.IN0
+Q1 => F33.IN0
+Q1 => WideAnd1.IN0
+Q1 => WideAnd3.IN0
+Q1 => WideAnd4.IN0
+Q2 => WideAnd3.IN1
+Q2 => WideAnd4.IN1
+Q2 => WideAnd5.IN1
+Q2 => F22.IN0
+Q2 => F33.IN1
+Q2 => WideAnd0.IN1
+Q2 => WideAnd1.IN1
+Q2 => WideAnd2.IN1
+Q2 => E1.IN0
+Q2 => WideAnd7.IN0
+Q3 => WideAnd1.IN2
+Q3 => WideAnd2.IN2
+Q3 => WideAnd3.IN2
+Q3 => WideAnd5.IN2
+Q3 => E1.IN1
+Q3 => WideAnd0.IN2
+Q3 => WideAnd4.IN2
+Q3 => WideAnd6.IN1
+Q3 => F22.IN1
+Q3 => WideAnd7.IN1
+Q4 => WideAnd0.IN3
+Q4 => WideAnd6.IN2
+Q4 => WideAnd7.IN2
+aus <= comb.DB_MAX_OUTPUT_PORT_TYPE
+bus <= comb.DB_MAX_OUTPUT_PORT_TYPE
+cus <= WideAnd4.DB_MAX_OUTPUT_PORT_TYPE
+dus <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+eus <= comb.DB_MAX_OUTPUT_PORT_TYPE
+fus <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+gus <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|decoder_duzen_sec:DCDDS
+Q1 => comb.IN0
+Q1 => comb.IN0
+Q1 => comb.DATAIN
+Q1 => comb.IN0
+Q1 => comb.IN0
+Q2 => comb.IN1
+Q2 => comb.IN1
+Q2 => comb.IN1
+Q2 => comb.IN1
+Q2 => comb.DATAIN
+adm <= comb.DB_MAX_OUTPUT_PORT_TYPE
+bdm <= <GND>
+cdm <= comb.DB_MAX_OUTPUT_PORT_TYPE
+ddm <= comb.DB_MAX_OUTPUT_PORT_TYPE
+edm <= comb.DB_MAX_OUTPUT_PORT_TYPE
+fdm <= comb.DB_MAX_OUTPUT_PORT_TYPE
+gdm <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|dFlipFlop:FFL0
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|dFlipFlop:FFL1
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|matriz_led_nivel:comb_49
+AL => WideAnd5.IN1
+AL => WideAnd6.IN1
+AL => WideAnd7.IN1
+AL => WideAnd8.IN1
+AL => WideAnd9.IN1
+AL => WideAnd10.IN1
+AL => WideAnd11.IN1
+AL => WideAnd12.IN1
+AL => WideAnd13.IN1
+AL => WideAnd14.IN1
+AL => WideAnd15.IN1
+AL => WideAnd16.IN1
+AL => WideAnd17.IN1
+AL => WideAnd18.IN1
+AL => WideAnd19.IN1
+A => WideAnd16.IN2
+A => WideAnd17.IN2
+A => WideAnd18.IN2
+A => WideAnd19.IN2
+A => WideAnd5.IN2
+A => WideAnd6.IN2
+A => WideAnd7.IN2
+A => WideAnd8.IN2
+A => WideAnd9.IN2
+A => WideAnd10.IN2
+A => WideAnd11.IN2
+A => WideAnd12.IN2
+A => WideAnd13.IN2
+A => WideAnd14.IN2
+A => WideAnd15.IN2
+M => WideAnd11.IN3
+M => WideAnd12.IN3
+M => WideAnd13.IN3
+M => WideAnd14.IN3
+M => WideAnd15.IN3
+M => WideAnd16.IN3
+M => WideAnd17.IN3
+M => WideAnd18.IN3
+M => WideAnd19.IN3
+M => WideAnd5.IN3
+M => WideAnd6.IN3
+M => WideAnd7.IN3
+M => WideAnd8.IN3
+M => WideAnd9.IN3
+M => WideAnd10.IN3
+B => WideAnd5.IN4
+B => WideAnd6.IN4
+B => WideAnd7.IN4
+B => WideAnd8.IN4
+B => WideAnd9.IN4
+B => WideAnd10.IN4
+B => WideAnd11.IN4
+B => WideAnd12.IN4
+B => WideAnd13.IN4
+B => WideAnd14.IN4
+B => WideAnd15.IN4
+B => WideAnd16.IN4
+B => WideAnd17.IN4
+B => WideAnd18.IN4
+B => WideAnd19.IN4
+C1 <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= WideAnd1.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= WideAnd2.DB_MAX_OUTPUT_PORT_TYPE
+C4 <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+C5 <= WideAnd4.DB_MAX_OUTPUT_PORT_TYPE
+L1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L2 <= WideOr15.DB_MAX_OUTPUT_PORT_TYPE
+L3 <= WideOr16.DB_MAX_OUTPUT_PORT_TYPE
+L4 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L5 <= WideOr17.DB_MAX_OUTPUT_PORT_TYPE
+L6 <= WideOr18.DB_MAX_OUTPUT_PORT_TYPE
+L7 <= <GND>
+S7 => S7.IN1
+
+
+|cronometro|matriz_led_nivel:comb_49|dFlipFlop:comb_7
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|matriz_led_nivel:comb_49|dFlipFlop:comb_8
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|matriz_led_nivel:comb_49|dFlipFlop:comb_9
+d => q~reg0.DATAIN
+rstn => q.IN0
+clk => q~reg0.CLK
+set => q~reg0.PRESET
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_ <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,673 @@
+Analysis & Synthesis report for D1_IN
+Fri Jul 12 13:45:44 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "matriz_led_nivel:comb_49|dFlipFlop:comb_9"
+ 10. Port Connectivity Checks: "matriz_led_nivel:comb_49|dFlipFlop:comb_8"
+ 11. Port Connectivity Checks: "matriz_led_nivel:comb_49|dFlipFlop:comb_7"
+ 12. Port Connectivity Checks: "matriz_led_nivel:comb_49"
+ 13. Port Connectivity Checks: "dFlipFlop:FFL1"
+ 14. Port Connectivity Checks: "dFlipFlop:FFL0"
+ 15. Port Connectivity Checks: "dFlipFlop:FFD1D"
+ 16. Port Connectivity Checks: "dFlipFlop:FFD0D"
+ 17. Port Connectivity Checks: "dFlipFlop:FFD3"
+ 18. Port Connectivity Checks: "dFlipFlop:FFD2"
+ 19. Port Connectivity Checks: "dFlipFlop:FFD1"
+ 20. Port Connectivity Checks: "dFlipFlop:FFD0"
+ 21. Port Connectivity Checks: "frequency_divisor:comb_3|dFlipFlop:F1"
+ 22. Port Connectivity Checks: "frequency_divisor:comb_3|dFlipFlop:F0"
+ 23. Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5"
+ 24. Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4"
+ 25. Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3"
+ 26. Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2"
+ 27. Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1"
+ 28. Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0"
+ 29. Analysis & Synthesis Messages
+ 30. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Fri Jul 12 13:45:44 2024       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; D1_IN                                       ;
+; Top-level Entity Name       ; cronometro                                  ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 67                                          ;
+; Total pins                  ; 43                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; cronometro         ; D1_IN              ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; D1_IN.v                          ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/leandro/D1_IN.v                         ;         ;
+; D2_IN.v                          ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/leandro/D2_IN.v                         ;         ;
+; D3_IN.v                          ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/leandro/D3_IN.v                         ;         ;
+; cronometro.v                     ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/leandro/cronometro.v                    ;         ;
+; dFlipFlop.v                      ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/leandro/dFlipFlop.v                     ;         ;
+; decoder_unit_sec.v               ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/leandro/decoder_unit_sec.v              ;         ;
+; decoder_duzen_sec.v              ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/leandro/decoder_duzen_sec.v             ;         ;
+; frequency_divisor.v              ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/leandro/frequency_divisor.v             ;         ;
+; delay.v                          ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/leandro/delay.v                         ;         ;
+; output_files/matriz_led_nivel.v  ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Total logic elements                        ; 67               ;
+;     -- Combinational with no register       ; 30               ;
+;     -- Register only                        ; 0                ;
+;     -- Combinational with a register        ; 37               ;
+;                                             ;                  ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 18               ;
+;     -- 3 input functions                    ; 8                ;
+;     -- 2 input functions                    ; 8                ;
+;     -- 1 input functions                    ; 33               ;
+;     -- 0 input functions                    ; 0                ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 67               ;
+;     -- arithmetic mode                      ; 0                ;
+;     -- qfbk mode                            ; 0                ;
+;     -- register cascade mode                ; 0                ;
+;     -- synchronous clear/load mode          ; 0                ;
+;     -- asynchronous clear/load mode         ; 0                ;
+;                                             ;                  ;
+; Total registers                             ; 37               ;
+; I/O pins                                    ; 43               ;
+; Maximum fan-out node                        ; dFlipFlop:FFL0|q ;
+; Maximum fan-out                             ; 13               ;
+; Total fan-out                               ; 209              ;
+; Average fan-out                             ; 1.90             ;
++---------------------------------------------+------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                 ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node    ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                         ; Entity Name       ; Library Name ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+-------------------+--------------+
+; |cronometro                   ; 67 (20)     ; 37           ; 0          ; 43   ; 0            ; 30 (20)      ; 0 (0)             ; 37 (0)           ; 0 (0)           ; 0 (0)      ; |cronometro                                                 ; cronometro        ; work         ;
+;    |dFlipFlop:FFD0D|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|dFlipFlop:FFD0D                                 ; dFlipFlop         ; work         ;
+;    |dFlipFlop:FFD0|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|dFlipFlop:FFD0                                  ; dFlipFlop         ; work         ;
+;    |dFlipFlop:FFD1D|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|dFlipFlop:FFD1D                                 ; dFlipFlop         ; work         ;
+;    |dFlipFlop:FFD1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|dFlipFlop:FFD1                                  ; dFlipFlop         ; work         ;
+;    |dFlipFlop:FFD2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|dFlipFlop:FFD2                                  ; dFlipFlop         ; work         ;
+;    |dFlipFlop:FFD3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|dFlipFlop:FFD3                                  ; dFlipFlop         ; work         ;
+;    |dFlipFlop:FFL0|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|dFlipFlop:FFL0                                  ; dFlipFlop         ; work         ;
+;    |dFlipFlop:FFL1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|dFlipFlop:FFL1                                  ; dFlipFlop         ; work         ;
+;    |frequency_divisor:comb_3| ; 27 (1)      ; 26           ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 26 (0)           ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3                        ; frequency_divisor ; work         ;
+;       |dFlipFlop:F0|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|dFlipFlop:F0           ; dFlipFlop         ; work         ;
+;       |dFlipFlop:F1|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|dFlipFlop:F1           ; dFlipFlop         ; work         ;
+;       |delay:DL1|             ; 6 (0)       ; 6            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (0)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL1              ; delay             ; work         ;
+;          |dFlipFlop:F0|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F1|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F2|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F3|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F4|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F5|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5 ; dFlipFlop         ; work         ;
+;       |delay:DL2|             ; 6 (0)       ; 6            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (0)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL2              ; delay             ; work         ;
+;          |dFlipFlop:F0|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F0 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F1|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F1 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F2|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F2 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F3|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F3 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F4|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F4 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F5|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL2|dFlipFlop:F5 ; dFlipFlop         ; work         ;
+;       |delay:DL3|             ; 6 (0)       ; 6            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (0)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL3              ; delay             ; work         ;
+;          |dFlipFlop:F0|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F0 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F1|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F1 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F2|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F2 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F3|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F3 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F4|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F4 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F5|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL3|dFlipFlop:F5 ; dFlipFlop         ; work         ;
+;       |delay:DL4|             ; 6 (0)       ; 6            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (0)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL4              ; delay             ; work         ;
+;          |dFlipFlop:F0|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F0 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F1|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F1 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F2|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F2 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F3|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F3 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F4|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F4 ; dFlipFlop         ; work         ;
+;          |dFlipFlop:F5|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|frequency_divisor:comb_3|delay:DL4|dFlipFlop:F5 ; dFlipFlop         ; work         ;
+;    |matriz_led_nivel:comb_49| ; 12 (9)      ; 3            ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |cronometro|matriz_led_nivel:comb_49                        ; matriz_led_nivel  ; work         ;
+;       |dFlipFlop:comb_7|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|matriz_led_nivel:comb_49|dFlipFlop:comb_7       ; dFlipFlop         ; work         ;
+;       |dFlipFlop:comb_8|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|matriz_led_nivel:comb_49|dFlipFlop:comb_8       ; dFlipFlop         ; work         ;
+;       |dFlipFlop:comb_9|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |cronometro|matriz_led_nivel:comb_49|dFlipFlop:comb_9       ; dFlipFlop         ; work         ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 37    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "matriz_led_nivel:comb_49|dFlipFlop:comb_9"                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; set      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "matriz_led_nivel:comb_49|dFlipFlop:comb_8"                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; set      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "matriz_led_nivel:comb_49|dFlipFlop:comb_7"                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; set      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "matriz_led_nivel:comb_49"                                                                                                                                                           ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; AL     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; AL[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dFlipFlop:FFL1"                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; set      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dFlipFlop:FFL0"                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; set      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dFlipFlop:FFD1D"                                                                                                                                                                      ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; set      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dFlipFlop:FFD0D"                                                                                                                                                                      ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; set      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dFlipFlop:FFD3"                                                                                                                                                                        ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; set      ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1]  ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q_       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dFlipFlop:FFD2"                                                                                                                                                                        ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; set      ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1]  ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q_       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dFlipFlop:FFD1"                                                                                                                                                                        ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; set      ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1]  ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; q_       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dFlipFlop:FFD0"                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rstn     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rstn[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; set      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequency_divisor:comb_3|dFlipFlop:F1"                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; rstn ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "frequency_divisor:comb_3|dFlipFlop:F0" ;
++------+--------+----------+----------------------------------------+
+; Port ; Type   ; Severity ; Details                                ;
++------+--------+----------+----------------------------------------+
+; rstn ; Input  ; Info     ; Stuck at GND                           ;
+; set  ; Input  ; Info     ; Stuck at GND                           ;
+; q    ; Output ; Info     ; Explicitly unconnected                 ;
++------+--------+----------+----------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F5" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; rstn ; Input ; Info     ; Stuck at GND                                      ;
+; set  ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F4" ;
++------+--------+----------+--------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                          ;
++------+--------+----------+--------------------------------------------------+
+; rstn ; Input  ; Info     ; Stuck at GND                                     ;
+; set  ; Input  ; Info     ; Stuck at GND                                     ;
+; q    ; Output ; Info     ; Explicitly unconnected                           ;
++------+--------+----------+--------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F3" ;
++------+--------+----------+--------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                          ;
++------+--------+----------+--------------------------------------------------+
+; rstn ; Input  ; Info     ; Stuck at GND                                     ;
+; set  ; Input  ; Info     ; Stuck at GND                                     ;
+; q    ; Output ; Info     ; Explicitly unconnected                           ;
++------+--------+----------+--------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F2" ;
++------+--------+----------+--------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                          ;
++------+--------+----------+--------------------------------------------------+
+; rstn ; Input  ; Info     ; Stuck at GND                                     ;
+; set  ; Input  ; Info     ; Stuck at GND                                     ;
+; q    ; Output ; Info     ; Explicitly unconnected                           ;
++------+--------+----------+--------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F1" ;
++------+--------+----------+--------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                          ;
++------+--------+----------+--------------------------------------------------+
+; rstn ; Input  ; Info     ; Stuck at GND                                     ;
+; set  ; Input  ; Info     ; Stuck at GND                                     ;
+; q    ; Output ; Info     ; Explicitly unconnected                           ;
++------+--------+----------+--------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0" ;
++------+--------+----------+--------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                          ;
++------+--------+----------+--------------------------------------------------+
+; rstn ; Input  ; Info     ; Stuck at GND                                     ;
+; set  ; Input  ; Info     ; Stuck at GND                                     ;
+; q    ; Output ; Info     ; Explicitly unconnected                           ;
++------+--------+----------+--------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Fri Jul 12 13:45:38 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off D1_IN -c D1_IN
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file D1_IN.v
+    Info (12023): Found entity 1: D1_IN File: /home/aluno/Documentos/leandro/D1_IN.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file D2_IN.v
+    Info (12023): Found entity 1: D2_IN File: /home/aluno/Documentos/leandro/D2_IN.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file D3_IN.v
+    Info (12023): Found entity 1: D3_IN File: /home/aluno/Documentos/leandro/D3_IN.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cronometro.v
+    Info (12023): Found entity 1: cronometro File: /home/aluno/Documentos/leandro/cronometro.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dFlipFlop.v
+    Info (12023): Found entity 1: dFlipFlop File: /home/aluno/Documentos/leandro/dFlipFlop.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file Levl_to_pulse.v
+    Info (12023): Found entity 1: Levl_to_pulse File: /home/aluno/Documentos/leandro/Levl_to_pulse.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_unit_sec.v
+    Info (12023): Found entity 1: decoder_unit_sec File: /home/aluno/Documentos/leandro/decoder_unit_sec.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_duzen_sec.v
+    Info (12023): Found entity 1: decoder_duzen_sec File: /home/aluno/Documentos/leandro/decoder_duzen_sec.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file frequency_divisor.v
+    Info (12023): Found entity 1: frequency_divisor File: /home/aluno/Documentos/leandro/frequency_divisor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file delay.v
+    Info (12023): Found entity 1: delay File: /home/aluno/Documentos/leandro/delay.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/matriz_led_nivel.v
+    Info (12023): Found entity 1: matriz_led_nivel File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(39): created implicit net for "a0S" File: /home/aluno/Documentos/leandro/cronometro.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(39): created implicit net for "b0S" File: /home/aluno/Documentos/leandro/cronometro.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(39): created implicit net for "c0S" File: /home/aluno/Documentos/leandro/cronometro.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(39): created implicit net for "d0S" File: /home/aluno/Documentos/leandro/cronometro.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(39): created implicit net for "e0S" File: /home/aluno/Documentos/leandro/cronometro.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(39): created implicit net for "f0S" File: /home/aluno/Documentos/leandro/cronometro.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(39): created implicit net for "g0S" File: /home/aluno/Documentos/leandro/cronometro.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(42): created implicit net for "a1D" File: /home/aluno/Documentos/leandro/cronometro.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(42): created implicit net for "b1D" File: /home/aluno/Documentos/leandro/cronometro.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(42): created implicit net for "c1D" File: /home/aluno/Documentos/leandro/cronometro.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(42): created implicit net for "d1D" File: /home/aluno/Documentos/leandro/cronometro.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(42): created implicit net for "e1D" File: /home/aluno/Documentos/leandro/cronometro.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(42): created implicit net for "f1D" File: /home/aluno/Documentos/leandro/cronometro.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(42): created implicit net for "g1D" File: /home/aluno/Documentos/leandro/cronometro.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(46): created implicit net for "L1" File: /home/aluno/Documentos/leandro/cronometro.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(47): created implicit net for "L2" File: /home/aluno/Documentos/leandro/cronometro.v Line: 47
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(49): created implicit net for "and40" File: /home/aluno/Documentos/leandro/cronometro.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(49): created implicit net for "L0" File: /home/aluno/Documentos/leandro/cronometro.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(50): created implicit net for "and50" File: /home/aluno/Documentos/leandro/cronometro.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(51): created implicit net for "or10" File: /home/aluno/Documentos/leandro/cronometro.v Line: 51
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(53): created implicit net for "DG1_" File: /home/aluno/Documentos/leandro/cronometro.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(54): created implicit net for "DG2_" File: /home/aluno/Documentos/leandro/cronometro.v Line: 54
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(55): created implicit net for "DG3_" File: /home/aluno/Documentos/leandro/cronometro.v Line: 55
+Warning (10236): Verilog HDL Implicit Net warning at cronometro.v(56): created implicit net for "DG4_" File: /home/aluno/Documentos/leandro/cronometro.v Line: 56
+Warning (10236): Verilog HDL Implicit Net warning at decoder_unit_sec.v(6): created implicit net for "A1" File: /home/aluno/Documentos/leandro/decoder_unit_sec.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at decoder_unit_sec.v(7): created implicit net for "A2" File: /home/aluno/Documentos/leandro/decoder_unit_sec.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at decoder_unit_sec.v(11): created implicit net for "B1" File: /home/aluno/Documentos/leandro/decoder_unit_sec.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at decoder_unit_sec.v(12): created implicit net for "B2" File: /home/aluno/Documentos/leandro/decoder_unit_sec.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at decoder_unit_sec.v(19): created implicit net for "D1" File: /home/aluno/Documentos/leandro/decoder_unit_sec.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at decoder_unit_sec.v(23): created implicit net for "E1" File: /home/aluno/Documentos/leandro/decoder_unit_sec.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at decoder_unit_sec.v(27): created implicit net for "F11" File: /home/aluno/Documentos/leandro/decoder_unit_sec.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at decoder_unit_sec.v(28): created implicit net for "F22" File: /home/aluno/Documentos/leandro/decoder_unit_sec.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at decoder_unit_sec.v(29): created implicit net for "F33" File: /home/aluno/Documentos/leandro/decoder_unit_sec.v Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at decoder_unit_sec.v(33): created implicit net for "G1" File: /home/aluno/Documentos/leandro/decoder_unit_sec.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(6): created implicit net for "NOT_A" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(7): created implicit net for "NOT_B" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(8): created implicit net for "NOT_M" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(9): created implicit net for "NOT_AL" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(25): created implicit net for "B1" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(25): created implicit net for "C6" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(26): created implicit net for "B2" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 26
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(27): created implicit net for "B3" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(28): created implicit net for "B4" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(29): created implicit net for "B5" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(30): created implicit net for "B6" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(32): created implicit net for "B_S1" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(33): created implicit net for "B_S2" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(34): created implicit net for "B_S3" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(35): created implicit net for "B_S4" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 35
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(36): created implicit net for "B_S5" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 36
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(37): created implicit net for "B_S6" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 37
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(41): created implicit net for "M1" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(42): created implicit net for "M2" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(43): created implicit net for "M3" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 43
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(44): created implicit net for "M5" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 44
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(45): created implicit net for "M6" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(47): created implicit net for "M_S1" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 47
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(48): created implicit net for "M_S2" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 48
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(49): created implicit net for "M_S3" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(50): created implicit net for "M_S5" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(51): created implicit net for "M_S6" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 51
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(55): created implicit net for "A2" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 55
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(56): created implicit net for "A3" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 56
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(57): created implicit net for "A5" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(58): created implicit net for "A6" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 58
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(60): created implicit net for "A_S2" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 60
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(61): created implicit net for "A_S3" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 61
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(62): created implicit net for "A_S5" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at matriz_led_nivel.v(63): created implicit net for "A_S6" File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 63
+Critical Warning (10846): Verilog HDL Instantiation warning at cronometro.v(9): instance has no name File: /home/aluno/Documentos/leandro/cronometro.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at cronometro.v(12): instance has no name File: /home/aluno/Documentos/leandro/cronometro.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at cronometro.v(13): instance has no name File: /home/aluno/Documentos/leandro/cronometro.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at cronometro.v(14): instance has no name File: /home/aluno/Documentos/leandro/cronometro.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at matriz_led_nivel.v(13): instance has no name File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at matriz_led_nivel.v(14): instance has no name File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at matriz_led_nivel.v(15): instance has no name File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at cronometro.v(94): instance has no name File: /home/aluno/Documentos/leandro/cronometro.v Line: 94
+Info (12127): Elaborating entity "cronometro" for the top level hierarchy
+Warning (10739): Verilog HDL warning at cronometro.v(59): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Documentos/leandro/cronometro.v Line: 59
+Info (12128): Elaborating entity "frequency_divisor" for hierarchy "frequency_divisor:comb_3" File: /home/aluno/Documentos/leandro/cronometro.v Line: 9
+Info (12128): Elaborating entity "delay" for hierarchy "frequency_divisor:comb_3|delay:DL1" File: /home/aluno/Documentos/leandro/frequency_divisor.v Line: 8
+Info (12128): Elaborating entity "dFlipFlop" for hierarchy "frequency_divisor:comb_3|delay:DL1|dFlipFlop:F0" File: /home/aluno/Documentos/leandro/delay.v Line: 15
+Info (12128): Elaborating entity "D1_IN" for hierarchy "D1_IN:comb_4" File: /home/aluno/Documentos/leandro/cronometro.v Line: 12
+Info (12128): Elaborating entity "D2_IN" for hierarchy "D2_IN:comb_5" File: /home/aluno/Documentos/leandro/cronometro.v Line: 13
+Info (12128): Elaborating entity "D3_IN" for hierarchy "D3_IN:comb_6" File: /home/aluno/Documentos/leandro/cronometro.v Line: 14
+Info (12128): Elaborating entity "decoder_unit_sec" for hierarchy "decoder_unit_sec:DCDUS" File: /home/aluno/Documentos/leandro/cronometro.v Line: 39
+Info (12128): Elaborating entity "decoder_duzen_sec" for hierarchy "decoder_duzen_sec:DCDDS" File: /home/aluno/Documentos/leandro/cronometro.v Line: 42
+Warning (10739): Verilog HDL warning at decoder_duzen_sec.v(10): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Documentos/leandro/decoder_duzen_sec.v Line: 10
+Info (12128): Elaborating entity "matriz_led_nivel" for hierarchy "matriz_led_nivel:comb_49" File: /home/aluno/Documentos/leandro/cronometro.v Line: 94
+Warning (10030): Net "C6" at matriz_led_nivel.v(25) has no driver or initial value, using a default initial value '0' File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 25
+Warning (10034): Output port "L7" at matriz_led_nivel.v(4) has no driver File: /home/aluno/Documentos/leandro/output_files/matriz_led_nivel.v Line: 4
+Info (13014): Ignored 4 buffer(s)
+    Info (13019): Ignored 4 SOFT buffer(s)
+Warning (12241): 12 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LL7" is stuck at GND File: /home/aluno/Documentos/leandro/cronometro.v Line: 5
+    Warning (13410): Pin "DG2" is stuck at VCC File: /home/aluno/Documentos/leandro/cronometro.v Line: 5
+Warning (21074): Design contains 10 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "D0SET" File: /home/aluno/Documentos/leandro/cronometro.v Line: 3
+    Warning (15610): No output dependent on input pin "D0RST" File: /home/aluno/Documentos/leandro/cronometro.v Line: 3
+    Warning (15610): No output dependent on input pin "D1SET" File: /home/aluno/Documentos/leandro/cronometro.v Line: 3
+    Warning (15610): No output dependent on input pin "D1RST" File: /home/aluno/Documentos/leandro/cronometro.v Line: 3
+    Warning (15610): No output dependent on input pin "D2SET" File: /home/aluno/Documentos/leandro/cronometro.v Line: 3
+    Warning (15610): No output dependent on input pin "D2RST" File: /home/aluno/Documentos/leandro/cronometro.v Line: 3
+    Warning (15610): No output dependent on input pin "D3SET" File: /home/aluno/Documentos/leandro/cronometro.v Line: 3
+    Warning (15610): No output dependent on input pin "D3RST" File: /home/aluno/Documentos/leandro/cronometro.v Line: 3
+    Warning (15610): No output dependent on input pin "D1DSET" File: /home/aluno/Documentos/leandro/cronometro.v Line: 3
+    Warning (15610): No output dependent on input pin "D1DRST" File: /home/aluno/Documentos/leandro/cronometro.v Line: 3
+Info (21057): Implemented 110 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 67 logic cells
+Info (144001): Generated suppressed messages file /home/aluno/Documentos/leandro/output_files/D1_IN.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 97 warnings
+    Info: Peak virtual memory: 339 megabytes
+    Info: Processing ended: Fri Jul 12 13:45:44 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:12
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /home/aluno/Documentos/leandro/output_files/D1_IN.map.smsg.
+
+
